@@ -3,7 +3,7 @@ title: Eco-Market
 description: Sustainable products from upcycled materials
 # Per GitHub Pages: se il repository è "username.github.io" lascia baseurl vuoto
 # Se il repository ha un nome (es. "testing-tents"), usa baseurl: "/testing-tents"
-baseurl: ""
+baseurl: "/testing-tents"
 url: "https://vongomben.github.io"
 
 # Theme and Plugins
