@@ -1,0 +1,20 @@
+<section class="p-4">
+  <h2 class="text-xl font-bold tracking-tight mb-4">Shop by Design</h2>
+  <div class="grid grid-cols-2 gap-3">
+    {% for material in site.materials %}
+    <div class="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+      <a href="/materials/{{ material.id }}">
+        <img 
+          src="{{ '/IMG/' | relative_url }}{{ material.image }}" 
+          alt="{{ material.name }}"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+        />
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/25 transition-colors">
+          <span class="text-white font-bold text-lg">{{ material.name }}</span>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+

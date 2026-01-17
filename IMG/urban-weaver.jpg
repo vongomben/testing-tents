@@ -1,0 +1,5 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#e8f5e9"/>
+  <text x="400" y="500" font-family="Arial" font-size="24" fill="#666" text-anchor="middle">Urban Weaver</text>
+  <text x="400" y="530" font-family="Arial" font-size="16" fill="#999" text-anchor="middle">Placeholder Image</text>
+</svg>

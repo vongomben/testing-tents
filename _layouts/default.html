@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "{{ site.colors.primary }}",
+              "background-light": "{{ site.colors.background-light }}",
+              "background-dark": "{{ site.colors.background-dark }}",
+              "accent": "{{ site.colors.accent }}"
+            },
+            fontFamily: {
+              "sans": ["Manrope", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-[#111813] dark:text-white transition-colors duration-300">
+    <div class="min-h-screen max-w-[610px] mx-auto relative bg-background-light dark:bg-background-dark pb-24">
+      {% include header.html %}
+      
+      <main class="flex flex-col gap-2 pb-8">
+        {{ content }}
+      </main>
+
+      {% include bottom-nav.html %}
+    </div>
+  </body>
+</html>
+

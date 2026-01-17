@@ -1,0 +1,95 @@
+# Site Settings
+title: Eco-Market
+description: Sustainable products from upcycled materials
+baseurl: ""
+url: ""
+
+# Theme and Plugins
+# theme: minima  # Non necessario, usiamo layout personalizzati
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections
+# Per i prodotti usiamo una collection personalizzata che accetta file .yml
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_products"
+      type: "products"
+    values:
+      layout: "product"
+
+# Navigation
+navigation:
+  - name: Home
+    url: /
+  - name: Shop
+    url: /shop
+  - name: Impact
+    url: /impact
+  - name: Profile
+    url: /profile
+
+# Social Media
+instagram:
+  url: https://www.instagram.com/extentproject/
+
+# Site Colors
+colors:
+  primary: "#13ec5b"
+  background-light: "#f6f8f6"
+  background-dark: "#102216"
+  accent: "#61896f"
+#  accent: "#61896f"
+# #d54796
+
+
+# Materials
+materials:
+  - id: canvas
+    name: Canvas
+    image: canvas.jpg
+  - id: tents
+    name: Tents
+    image: tents.jpg
+  - id: webbing
+    name: Webbing
+    image: webbing.jpg
+  - id: textiles
+    name: Textiles
+    image: textiles.jpg
+
+# Shop Categories (moved to _data/categories.yml for better Jekyll compatibility)
+
+# Impact Stats
+impact:
+  tents_saved: 1248
+  percentage_change: 12
+
+# Featured Story
+featured_story:
+  title: "The Lifecycle of a Tent"
+  subtitle: "Our Process"
+  image: story.jpg
+  link: "/story"
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - tsconfig.json
+  - vite.config.ts
+  - dist
+  - .git
+  - .gitignore
+

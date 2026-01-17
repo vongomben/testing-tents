@@ -6,7 +6,6 @@ material: Reclaimed Canvas
 price: 189
 image: bag-01.jpg
 is_limited: true
-date: 2024-01-01
 category: bags
 tags:
   - limited

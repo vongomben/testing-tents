@@ -1,0 +1,12 @@
+- id: bags
+  name: Bags
+  image: bag-01.jpg
+- id: pouches
+  name: Pouches
+  image: pouch-01.jpg
+- id: jackets
+  name: Jackets
+  image: jacket-m.jpg
+- id: wallet
+  name: Wallet
+  image: betty.jpg

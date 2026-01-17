@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="p-4">
+  <div class="mb-4">
+    <img src="{{ '/IMG/' | relative_url }}{{ page.image }}" alt="{{ page.title }}" class="w-full rounded-2xl mb-4" />
+    <h1 class="text-2xl font-bold mb-2">{{ page.title }}</h1>
+    <p class="text-accent mb-4">{{ page.material }}</p>
+    <div class="flex items-center justify-between mb-4">
+      <span class="text-3xl font-bold text-primary">${{ page.price }}</span>
+      {% if page.is_limited %}
+      <span class="bg-primary text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Limited Edition
+      </span>
+      {% endif %}
+    </div>
+  </div>
+  
+  <div class="prose dark:prose-invert">
+    {{ content }}
+  </div>
+</div>
+
