@@ -6,7 +6,7 @@ title: The Lifecycle of a Tent
 <div class="p-4">
   <div class="mb-6">
     <img 
-      src="{{ site.baseurl }}/IMG/{{ site.featured_story.image }}" 
+      src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/IMG/{{ site.featured_story.image }}" 
       alt="{{ site.featured_story.title }}"
       class="w-full rounded-2xl mb-6" 
     />

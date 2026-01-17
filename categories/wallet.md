@@ -15,7 +15,7 @@ permalink: /categories/wallet/
       <a href="{{ product.url }}">
         <div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-3">
           <img 
-            src="{{ site.baseurl }}/IMG/{{ product.image }}" 
+            src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/IMG/{{ product.image }}" 
             alt="{{ product.title }}"
             class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
           />
