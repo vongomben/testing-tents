@@ -3,7 +3,7 @@
   <div class="grid grid-cols-2 gap-3">
     {% for material in site.materials %}
     <div class="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer">
-      <a href="/materials/{{ material.id }}">
+      <a href="{{ '/materials/' | relative_url }}{{ material.id }}">
         <img 
           src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/IMG/{{ material.image }}" 
           alt="{{ material.name }}"

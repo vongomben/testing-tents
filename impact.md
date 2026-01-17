@@ -73,7 +73,7 @@ title: Our Impact
     <p class="text-sm text-accent dark:text-gray-400 mb-4">
       Shop our upcycled products and help us save more tents from landfills.
     </p>
-    <a href="/" class="inline-block bg-primary text-black font-bold px-6 py-3 rounded-xl hover:bg-white transition-all">
+    <a href="{{ '/' | relative_url }}" class="inline-block bg-primary text-black font-bold px-6 py-3 rounded-xl hover:bg-white transition-all">
       Explore Products
     </a>
   </div>

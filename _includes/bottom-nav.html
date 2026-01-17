@@ -17,7 +17,7 @@
     </a>
     {% else %}
     <a 
-      href="{{ nav_item.url }}"
+      href="{{ nav_item.url | relative_url }}"
       class="flex flex-col items-center gap-1 transition-all duration-300 {% if page.url == nav_item.url %}text-primary{% else %}text-accent dark:text-gray-500{% endif %}"
     >
       <span 

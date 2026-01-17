@@ -12,7 +12,7 @@ permalink: /categories/jackets/
     {% assign jackets_products = site.products | where: "category", "jacket" %}
     {% for product in jackets_products %}
     <div class="group cursor-pointer">
-      <a href="{{ product.url }}">
+      <a href="{{ product.url | relative_url }}">
         <div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-3">
           <img 
             src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/IMG/{{ product.image }}" 

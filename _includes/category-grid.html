@@ -3,7 +3,7 @@
   <div class="grid grid-cols-2 gap-3">
     {% for category in site.data.categories %}
     <div class="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer">
-      <a href="/categories/{{ category.id }}">
+      <a href="{{ '/categories/' | relative_url }}{{ category.id }}">
         <img 
           src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/IMG/{{ category.image }}" 
           alt="{{ category.name }}"
